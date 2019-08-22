@@ -1,0 +1,34 @@
+{
+  "name": "browser-cluster",
+  "version": "0.0.1",
+  "description": "Runs a cluster of chrome browsers that can perform tasks in parallel",
+  "author": "aryamohades",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aryamohades/browser-cluster.git"
+  },
+  "engines": {
+    "node": ">=12.9.0"
+  },
+  "main": "lib/cluster.js",
+  "scripts": {
+    "debug": "DEBUG=browser-cluster:* node -r esm ./examples/get-page-title.js",
+    "lint": "eslint lib",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm cache verify && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "esm": "^3.2.25",
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "cheerio": "^1.0.0-rc.3",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}

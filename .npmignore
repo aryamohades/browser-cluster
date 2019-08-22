@@ -1,0 +1,9 @@
+# This file is written to be a whitelist instead of a blacklist
+*
+
+# These are the files that are allowed
+!/CHANGELOG.md
+!/LICENSE
+!/README.md
+!/package.json
+!/lib/**/*
